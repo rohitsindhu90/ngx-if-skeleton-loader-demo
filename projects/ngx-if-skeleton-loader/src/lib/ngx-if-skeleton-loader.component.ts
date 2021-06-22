@@ -14,9 +14,12 @@ export class NgxSkeletonLoaderComponent implements OnInit {
 
   @Input() theme: { [k: string]: string } = {};
 
+  @Input() styleClass:string='';
   styles: { [k: string]: any } = {};
 
   items: Array<any> = [];
+
+  
 
   ngOnInit() {
     this.styles = this.theme || {};
